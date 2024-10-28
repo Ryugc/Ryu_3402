@@ -1,0 +1,29 @@
+{
+    "version": 2,
+    "name": "port_work",
+    "builds": [
+      {
+        "src": "landing.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "work.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "style.css",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/",
+        "dest": "/landing.html"
+      },
+      {
+        "src": "/work",
+        "dest": "/work.html"
+      }
+    ]
+  }
+  
